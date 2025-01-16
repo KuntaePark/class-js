@@ -1,5 +1,3 @@
-document.write("<h1>안녕</h1>");
-
 //변수 선언법
 var a = "car"; // 변수, 재선언 가능
 var a = "let"; // 가능

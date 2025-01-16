@@ -22,13 +22,4 @@ fn3();
 //변수에 함수 저장 가능
 const v = f;
 v(3, 4);
-
-function f(a, b) {
-  if (a <= 0) {
-    return 0;
-  } else {
-    return 1 + f(a - b, b);
-  }
-}
-
-console.log(f(12, 4));
+document.write("<button id='btn'>버튼</button>");
