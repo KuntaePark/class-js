@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+  color: whitesmoke;
+}
+
+header div {
+  /* border: 1px solid gray; */
+  /* 구상 초기에는  border 활용하기 */
+  display: flex;
+  justify-content: space-between;
+}
+/* 
+셀렉터 띄워쓰기 : 셀렉터 안에 있는 모든 해당 요소를 선택
+*/
+header ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.myBtn,
+header .title {
+  border: none;
+  cursor: pointer;
+}
+
+.myBtn:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.myBtn:active {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+header .title {
+  padding: 20px 10px;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgb(221, 0, 0);
+  background-color: transparent;
+}
+
+/* 
+.class.class : 여러 개의 클래스가 한번에 들어있는 태그를 선택
+id는 고유값
+*/
+.myBtn.login {
+  background-color: rgb(221, 0, 0);
+  color: whitesmoke;
+}
+
+header .myBtn {
+  border-radius: 4px;
+  padding: 10px;
+  /* padding, margin은 4개의 값을 받는다 
+    top right bottom left: clockwise
+  */
+}
+
+.myBtn.lang {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid;
+}
